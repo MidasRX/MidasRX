@@ -2,6 +2,8 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Midas+R;" />
 </h1>
 
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.16/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/DTNxCqY48VmNF-0A/scene.splinecode"></spline-viewer>
 <h3 align="center">Developer From France</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=midasrx&label=Profile%20views&color=0e75b6&style=flat" alt="midasrx" /> </p>
