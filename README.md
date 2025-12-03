@@ -23,10 +23,10 @@
 ###
 
 <div align="center">
-  <a href="maximepolice" target="_blank">
+  <a href="https://discord.com/maximepolice" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="discord logo"  />
   </a>
-  <a href="@NagiOnTop" target="_blank">
+  <a href="https://t.me/NagiOnTop" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Telegram&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="telegram logo"  />
   </a>
 </div>
