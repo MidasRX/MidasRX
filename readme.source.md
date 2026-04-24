@@ -198,7 +198,11 @@
 </div>
 ```
 
-##  Get In Touch
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=MidasRX&show_icons=true&theme=tokyonight&hide_border=true&bg_color=08080d&title_color=6cc3ff&icon_color=e664b4&text_color=ffffff" alt="GitHub Stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MidasRX&layout=compact&theme=tokyonight&hide_border=true&bg_color=08080d&title_color=6cc3ff&text_color=ffffff&langs_count=8" alt="Top Languages" />
+  <img height="165" src="https://streak-stats.demolab.com/?user=MidasRX&theme=tokyonight&hide_border=true&background=08080d&ring=6cc3ff&fire=e664b4&currStreakLabel=ffffff" alt="GitHub Streak" />
+</p>
 
 ```aura width=160 height=44 link="https://t.me/NagiOnTop" inline align=center
 <SocialMediaButton
