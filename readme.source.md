@@ -157,6 +157,89 @@
 </div>
 ```
 
+```aura width=900 height=300
+<div style={{ display: 'flex', flexDirection: 'row', gap: 16, width: '100%', height: '100%', fontFamily: 'Inter, sans-serif' }}>
+  <style>{`
+    @keyframes r-orb { 0%, 100% { transform: translate(0,0); opacity: 0.5; } 50% { transform: translate(18px,-12px); opacity: 0.85; } }
+    @keyframes r-orb-b { 0%, 100% { transform: translate(0,0); opacity: 0.4; } 50% { transform: translate(-14px,10px); opacity: 0.7; } }
+    @keyframes r-pulse { 0%, 100% { opacity: 0.5; transform: scale(1); } 50% { opacity: 1; transform: scale(1.15); } }
+    @keyframes r-ring { 0%, 100% { opacity: 0.08; } 50% { opacity: 0.25; } }
+    #r1-o1 { animation: r-orb 9s ease-in-out infinite; }
+    #r1-o2 { animation: r-orb-b 11s ease-in-out infinite 1s; }
+    #r2-o1 { animation: r-orb 10s ease-in-out infinite 0.5s; }
+    #r2-o2 { animation: r-orb-b 12s ease-in-out infinite 1.5s; }
+    #r1-dot { animation: r-pulse 2.4s ease-in-out infinite; transform-origin: center; }
+    #r2-dot { animation: r-pulse 2.4s ease-in-out infinite 0.6s; transform-origin: center; }
+    #r1-ring { animation: r-ring 7s ease-in-out infinite; }
+    #r2-ring { animation: r-ring 7s ease-in-out infinite 1.5s; }
+  `}</style>
+
+  <div style={{ position: 'relative', display: 'flex', flex: 1, height: '100%', background: '#08080d', borderRadius: 16, overflow: 'hidden' }}>
+    <svg width="100%" height="300" style={{ position: 'absolute', top: 0, left: 0 }}>
+      <defs>
+        <radialGradient id="rg1a" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="rgba(108,195,255,0.5)" />
+          <stop offset="100%" stopColor="rgba(108,195,255,0)" />
+        </radialGradient>
+        <radialGradient id="rg1b" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="rgba(195,155,255,0.45)" />
+          <stop offset="100%" stopColor="rgba(195,155,255,0)" />
+        </radialGradient>
+      </defs>
+      <ellipse id="r1-o1" cx="60" cy="260" rx="170" ry="140" fill="url(#rg1a)" />
+      <ellipse id="r1-o2" cx="380" cy="40" rx="150" ry="120" fill="url(#rg1b)" />
+      <circle id="r1-ring" cx="220" cy="150" r="70" fill="none" stroke="rgba(108,195,255,0.9)" strokeWidth="0.7" />
+    </svg>
+    <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 32px', zIndex: 10 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
+        <div id="r1-dot" style={{ width: 10, height: 10, borderRadius: 50, background: '#6cc3ff' }} />
+        <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.45)', letterSpacing: 4, textTransform: 'uppercase' }}>role · 01</span>
+      </div>
+      <span style={{ fontSize: 36, fontWeight: 700, color: '#ffffff', lineHeight: 1.1, letterSpacing: -1 }}>AI Manager</span>
+      <span style={{ fontSize: 14, color: 'rgba(255,255,255,0.55)', marginTop: 14, lineHeight: 1.5, maxWidth: 360 }}>Orchestrating intelligent systems, model pipelines and automated agents at scale.</span>
+      <div style={{ display: 'flex', gap: 8, marginTop: 18 }}>
+        <span style={{ padding: '5px 14px', background: 'rgba(108,195,255,0.08)', color: 'rgba(108,195,255,0.9)', borderRadius: 100, fontSize: 11, border: '1px solid rgba(108,195,255,0.2)', letterSpacing: 1 }}>LLM Ops</span>
+        <span style={{ padding: '5px 14px', background: 'rgba(108,195,255,0.08)', color: 'rgba(108,195,255,0.9)', borderRadius: 100, fontSize: 11, border: '1px solid rgba(108,195,255,0.2)', letterSpacing: 1 }}>Agents</span>
+        <span style={{ padding: '5px 14px', background: 'rgba(108,195,255,0.08)', color: 'rgba(108,195,255,0.9)', borderRadius: 100, fontSize: 11, border: '1px solid rgba(108,195,255,0.2)', letterSpacing: 1 }}>Pipelines</span>
+      </div>
+    </div>
+  </div>
+
+  <div style={{ position: 'relative', display: 'flex', flex: 1, height: '100%', background: '#08080d', borderRadius: 16, overflow: 'hidden' }}>
+    <svg width="100%" height="300" style={{ position: 'absolute', top: 0, left: 0 }}>
+      <defs>
+        <radialGradient id="rg2a" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="rgba(230,100,180,0.5)" />
+          <stop offset="100%" stopColor="rgba(230,100,180,0)" />
+        </radialGradient>
+        <radialGradient id="rg2b" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="rgba(255,180,100,0.4)" />
+          <stop offset="100%" stopColor="rgba(255,180,100,0)" />
+        </radialGradient>
+      </defs>
+      <ellipse id="r2-o1" cx="60" cy="260" rx="170" ry="140" fill="url(#rg2a)" />
+      <ellipse id="r2-o2" cx="380" cy="40" rx="150" ry="120" fill="url(#rg2b)" />
+      <circle id="r2-ring" cx="220" cy="150" r="70" fill="none" stroke="rgba(230,100,180,0.9)" strokeWidth="0.7" />
+    </svg>
+    <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 32px', zIndex: 10 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
+        <div id="r2-dot" style={{ width: 10, height: 10, borderRadius: 50, background: '#e664b4' }} />
+        <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.45)', letterSpacing: 4, textTransform: 'uppercase' }}>role · 02</span>
+      </div>
+      <span style={{ fontSize: 28, fontWeight: 700, color: '#ffffff', lineHeight: 1.1, letterSpacing: -0.5 }}>Payment Vulnerability</span>
+      <span style={{ fontSize: 28, fontWeight: 700, color: '#ffffff', lineHeight: 1.1, letterSpacing: -0.5 }}>Researcher</span>
+      <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', marginTop: 12, lineHeight: 1.5, maxWidth: 380 }}>Disclosed multiple vulnerabilities to major corporations.</span>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 14, maxWidth: 380 }}>
+        <span style={{ padding: '4px 12px', background: 'rgba(230,100,180,0.08)', color: 'rgba(255,180,220,0.95)', borderRadius: 100, fontSize: 11, border: '1px solid rgba(230,100,180,0.25)', letterSpacing: 0.5 }}>IONOS</span>
+        <span style={{ padding: '4px 12px', background: 'rgba(230,100,180,0.08)', color: 'rgba(255,180,220,0.95)', borderRadius: 100, fontSize: 11, border: '1px solid rgba(230,100,180,0.25)', letterSpacing: 0.5 }}>Cloudflare</span>
+        <span style={{ padding: '4px 12px', background: 'rgba(230,100,180,0.08)', color: 'rgba(255,180,220,0.95)', borderRadius: 100, fontSize: 11, border: '1px solid rgba(230,100,180,0.25)', letterSpacing: 0.5 }}>Stripe</span>
+        <span style={{ padding: '4px 12px', background: 'rgba(230,100,180,0.08)', color: 'rgba(255,180,220,0.95)', borderRadius: 100, fontSize: 11, border: '1px solid rgba(230,100,180,0.25)', letterSpacing: 0.5 }}>+ many more</span>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
 ## 📊 GitHub Stats
 
 <p align="center">
@@ -268,7 +351,3 @@
   ]}
 />
 ```
-
-<p align="center">
-  <sub>Crafted with <a href="https://github.com/collectioneur/readme-aura">readme-aura</a> · React/JSX → SVG</sub>
-</p>
