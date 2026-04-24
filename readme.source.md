@@ -45,7 +45,7 @@
 
   <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', zIndex: 10 }}>
     <span style={{ fontSize: 14, color: 'rgba(255,255,255,0.45)', letterSpacing: 6, textTransform: 'uppercase', fontWeight: 300 }}>welcome to my profile</span>
-    <span style={{ fontSize: 64, fontWeight: 700, color: '#ffffff', letterSpacing: -2, lineHeight: 1, marginTop: 14 }}>Maxime Police</span>
+    <span style={{ fontSize: 64, fontWeight: 700, color: '#ffffff', letterSpacing: -2, lineHeight: 1, marginTop: 14 }}>MidasR</span>
     <span style={{ fontSize: 14, color: 'rgba(255,255,255,0.55)', marginTop: 14, letterSpacing: 3, textTransform: 'uppercase', fontWeight: 300 }}>systems · low-level · windows</span>
     <div style={{ display: 'flex', gap: 8, marginTop: 22 }}>
       <span style={{ padding: '6px 16px', background: 'rgba(255,255,255,0.05)', color: 'rgba(255,255,255,0.7)', borderRadius: 100, fontSize: 11, border: '1px solid rgba(255,255,255,0.1)', letterSpacing: 1 }}>C++</span>
@@ -99,17 +99,18 @@
       <span style={{ fontSize: 24, fontWeight: 600, color: '#ffffff', lineHeight: 1.3 }}>Low-level developer.</span>
       <span style={{ fontSize: 24, fontWeight: 600, color: '#ffffff', lineHeight: 1.3 }}>Windows whisperer.</span>
       <div style={{ display: 'flex', alignItems: 'center', marginTop: 16 }}>
-        <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', fontFamily: 'monospace' }}>{'> currently shipping at Zerdium'}</span>
+        <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', fontFamily: 'monospace' }}>{'> CEO @ Zerdium'}</span>
         <span id="ab-cursor" style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', fontFamily: 'monospace', marginLeft: 1 }}>_</span>
       </div>
     </div>
   </div>
 
   <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: 260, flexShrink: 0, background: '#08080d', borderRadius: 16, overflow: 'hidden' }}>
-    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', letterSpacing: 4, textTransform: 'uppercase' }}>currently at</span>
+    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', letterSpacing: 4, textTransform: 'uppercase' }}>CEO at</span>
     <img src="./img/zerdium logo.png" style={{ width: 160, height: 80, objectFit: 'contain', marginTop: 12 }} />
     <span style={{ fontSize: 18, fontWeight: 700, color: '#ffffff', marginTop: 10 }}>Zerdium</span>
-    <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', marginTop: 4, letterSpacing: 1 }}>previously · Nova Sentinel</span>
+    <span style={{ fontSize: 11, color: 'rgba(108,195,255,0.85)', marginTop: 6, letterSpacing: 2, textTransform: 'uppercase', fontWeight: 600 }}>Chief Executive Officer</span>
+    <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', marginTop: 6, letterSpacing: 1 }}>previously · Nova Sentinel</span>
   </div>
 </div>
 ```
