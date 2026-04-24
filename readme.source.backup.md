@@ -115,6 +115,49 @@
 </div>
 ```
 
+```aura width=900 height=220
+<div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', background: '#08080d', borderRadius: 20, overflow: 'hidden', fontFamily: 'Inter, sans-serif' }}>
+  <style>{`
+    @keyframes s-orb { 0%, 100% { transform: translate(0,0); opacity: 0.45; } 50% { transform: translate(18px,-14px); opacity: 0.7; } }
+    @keyframes s-orb-b { 0%, 100% { transform: translate(0,0); opacity: 0.4; } 50% { transform: translate(-14px,10px); opacity: 0.65; } }
+    #st-o1 { animation: s-orb 10s ease-in-out infinite; }
+    #st-o2 { animation: s-orb-b 12s ease-in-out infinite 1s; }
+    #st-o3 { animation: s-orb 9s ease-in-out infinite 2.5s; }
+    #st-o4 { animation: s-orb-b 11s ease-in-out infinite 0.5s; }
+  `}</style>
+  <svg width="900" height="220" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <defs>
+      <radialGradient id="stg1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(108,195,255,0.4)" />
+        <stop offset="100%" stopColor="rgba(108,195,255,0)" />
+      </radialGradient>
+      <radialGradient id="stg2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(230,100,180,0.35)" />
+        <stop offset="100%" stopColor="rgba(230,100,180,0)" />
+      </radialGradient>
+      <radialGradient id="stg3" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(80,160,220,0.3)" />
+        <stop offset="100%" stopColor="rgba(80,160,220,0)" />
+      </radialGradient>
+      <radialGradient id="stg4" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(195,155,255,0.3)" />
+        <stop offset="100%" stopColor="rgba(195,155,255,0)" />
+      </radialGradient>
+    </defs>
+    <ellipse id="st-o1" cx="80"  cy="180" rx="180" ry="140" fill="url(#stg1)" />
+    <ellipse id="st-o2" cx="820" cy="50"  rx="170" ry="130" fill="url(#stg2)" />
+    <ellipse id="st-o3" cx="720" cy="190" rx="160" ry="120" fill="url(#stg3)" />
+    <ellipse id="st-o4" cx="180" cy="40"  rx="150" ry="110" fill="url(#stg4)" />
+  </svg>
+  <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.35)', letterSpacing: 5, textTransform: 'uppercase', marginBottom: 18, zIndex: 10 }}>my stack</span>
+  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center', zIndex: 10, maxWidth: 780 }}>
+    {['C++', 'Rust', 'C#', 'C', 'Python', 'HTML', 'CSS', 'Windows Mastering'].map((tech, i) => (
+      <span key={i} style={{ padding: '8px 20px', background: 'rgba(255,255,255,0.05)', color: 'rgba(255,255,255,0.75)', borderRadius: 100, fontSize: 13, border: '1px solid rgba(255,255,255,0.1)', letterSpacing: 0.5 }}>{tech}</span>
+    ))}
+  </div>
+</div>
+```
+
 ```aura width=900 height=300
 <div style={{ display: 'flex', flexDirection: 'row', gap: 16, width: '100%', height: '100%', fontFamily: 'Inter, sans-serif' }}>
   <style>{`
@@ -198,7 +241,16 @@
 </div>
 ```
 
-##  Get In Touch
+## 📊 GitHub Stats
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=MidasRX&show_icons=true&theme=tokyonight&hide_border=true&bg_color=08080d&title_color=6cc3ff&icon_color=e664b4&text_color=ffffff" alt="GitHub Stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MidasRX&layout=compact&theme=tokyonight&hide_border=true&bg_color=08080d&title_color=6cc3ff&text_color=ffffff&langs_count=8" alt="Top Languages" />
+  <img height="165" src="https://streak-stats.demolab.com/?user=MidasRX&theme=tokyonight&hide_border=true&background=08080d&ring=6cc3ff&fire=e664b4&currStreakLabel=ffffff" alt="GitHub Streak" />
+</p>
+
+
+## 📬 Get In Touch
 
 ```aura width=160 height=44 link="https://t.me/NagiOnTop" inline align=center
 <SocialMediaButton
