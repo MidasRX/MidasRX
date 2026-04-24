@@ -23,16 +23,6 @@
 ## 📬 Get In Touch
 
 <p align="center">
-  <a href="https://t.me/NagiOnTop">
-    <img src="./img/telegram-logo-0-2.webp" alt="Telegram" width="64" height="64" />
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://discord.com/users/maximepolice">
-    <img src="./img/canva-discord-logo-MAGzZ0yqbBM.webp" alt="Discord" width="64" height="64" />
-  </a>
-</p>
-
-<p align="center">
   <b>Telegram</b> · <code>@NagiOnTop</code> &nbsp;·&nbsp; <b>Discord</b> · <code>maximepolice</code>
 </p>
 
