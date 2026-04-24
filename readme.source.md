@@ -243,60 +243,13 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MidasRX&show_icons=true&theme=tokyonight&hide_border=true&bg_color=08080d&title_color=6cc3ff&icon_color=e664b4&text_color=ffffff" alt="GitHub Stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=MidasRX&show_icons=true&theme=tokyonight&hide_border=true&bg_color=08080d&title_color=6cc3ff&icon_color=e664b4&text_color=ffffff" alt="GitHub Stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MidasRX&layout=compact&theme=tokyonight&hide_border=true&bg_color=08080d&title_color=6cc3ff&text_color=ffffff&langs_count=8" alt="Top Languages" />
+  <img height="165" src="https://streak-stats.demolab.com/?user=MidasRX&theme=tokyonight&hide_border=true&background=08080d&ring=6cc3ff&fire=e664b4&currStreakLabel=ffffff" alt="GitHub Streak" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MidasRX&layout=compact&theme=tokyonight&hide_border=true&bg_color=08080d&title_color=6cc3ff&text_color=ffffff&langs_count=8" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=MidasRX&theme=tokyonight&hide_border=true&background=08080d&ring=6cc3ff&fire=e664b4&currStreakLabel=ffffff" alt="GitHub Streak" />
-</p>
-
-```aura width=900 height=180
-<div style={{ position: 'relative', display: 'flex', width: '100%', height: '100%', background: '#08080d', borderRadius: 20, overflow: 'hidden', fontFamily: 'Inter, sans-serif' }}>
-  <style>{`
-    @keyframes joke-orb { 0%, 100% { transform: translate(0,0); opacity: 0.5; } 50% { transform: translate(20px,-12px); opacity: 0.8; } }
-    @keyframes chick-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
-    @keyframes pop { 0% { opacity: 0; transform: scale(0.9); } 100% { opacity: 1; transform: scale(1); } }
-    #j-o1 { animation: joke-orb 9s ease-in-out infinite; }
-    #j-o2 { animation: joke-orb 11s ease-in-out infinite 1.5s; }
-    #chick { animation: chick-bob 1.6s ease-in-out infinite; transform-origin: center; }
-    #punch { animation: pop 1s ease-out 1.2s both; }
-  `}</style>
-  <svg width="900" height="180" style={{ position: 'absolute', top: 0, left: 0 }}>
-    <defs>
-      <radialGradient id="jg1" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(255,195,110,0.4)" />
-        <stop offset="100%" stopColor="rgba(255,195,110,0)" />
-      </radialGradient>
-      <radialGradient id="jg2" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(108,195,255,0.35)" />
-        <stop offset="100%" stopColor="rgba(108,195,255,0)" />
-      </radialGradient>
-    </defs>
-    <ellipse id="j-o1" cx="120" cy="160" rx="180" ry="130" fill="url(#jg1)" />
-    <ellipse id="j-o2" cx="780" cy="30"  rx="170" ry="130" fill="url(#jg2)" />
-  </svg>
-  <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 40px', zIndex: 10, width: '100%' }}>
-    <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', letterSpacing: 5, textTransform: 'uppercase', marginBottom: 8 }}>daily joke</span>
-    <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-      <span id="chick" style={{ fontSize: 44 }}>🐔</span>
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <span style={{ fontSize: 20, fontWeight: 600, color: '#ffffff', lineHeight: 1.3 }}>Why did the chicken cross the road?</span>
-        <span id="punch" style={{ fontSize: 16, color: 'rgba(255,255,255,0.7)', marginTop: 6, fontStyle: 'italic' }}>To get to the other `;`</span>
-      </div>
-    </div>
-  </div>
-</div>
-```
 
 ## 📬 Get In Touch
-
-<p align="center">
-  <b>Telegram</b> · <code>@NagiOnTop</code> &nbsp;·&nbsp; <b>Discord</b> · <code>maximepolice</code>
-</p>
 
 ```aura width=160 height=44 link="https://t.me/NagiOnTop" inline align=center
 <SocialMediaButton
