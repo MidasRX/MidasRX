@@ -1,0 +1,29 @@
+name: Regenerate Org README
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'readme.source.md'
+      - 'img/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate README
+        uses: collectioneur/readme-aura@v1.0.3
+        with:
+          source: readme.source.md
+          output: profile/README.md
+          assets_dir: profile/assets
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_user: ZerdiumCorp
+          auto_commit: 'true'
